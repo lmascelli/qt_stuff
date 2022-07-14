@@ -10,8 +10,8 @@ function build
   } else
   {
     New-Item -Path "build" -ItemType Directory
-    Copy-Item -Path "..\*.dll" -Destination "build"
-    Copy-Item -Path "..\platforms" -Destination "build" -Recurse
+    Copy-Item -Path "..\bin\*.dll" -Destination "build"
+    Copy-Item -Path "..\bin\platforms" -Destination "build" -Recurse
     build
   }
 }

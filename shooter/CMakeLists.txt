@@ -22,6 +22,8 @@ add_executable(shooter
   src/bullet.h
   src/game.cpp
   src/game.h
+  src/enemy.cpp
+  src/enemy.h
   )
 target_include_directories(shooter PRIVATE ${Qt6_INCLUDE_DIRS})
 
